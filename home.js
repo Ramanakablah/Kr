@@ -1,7 +1,7 @@
 const { ENGINE_METHOD_ALL } = require("constants");
 const express =require("express");
 const app =express();
-const port = 8000;
+const port = process.env.Port || 8000;
 
 app.set('view engine','pug');
 
