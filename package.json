@@ -5,11 +5,12 @@
   "main": "home.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node home.js"
+    "start": "node home.js"
   },
   "author": "Raman",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "pug": "^3.0.2"
   }
