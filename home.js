@@ -5,9 +5,10 @@ const port = process.env.Port;
 
 app.set('view engine','pug');
 
-app.get("/",(req,res)=>
-{
+app.get("/",(req,res)=>{
 res.status(200).render('../home.pug')
 })
 
-app.listen(port)
+app.listen(port,'0.0.0.0', ()=>{
+    console.log(running);
+})
